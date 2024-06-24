@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+<class name="com.javatpoint.Employee" table="Employee3">
+<id name="employeeId"> <generator class="increment"/></id>
+<property name="name"/>
+<property name="email"/>
+<many-to-one name="address" cascade="all"/>
+</class>
+
+</hibernate-mapping>

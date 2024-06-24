@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+<class name="com.javatpoint.Address" table="Address3">
+<id name="addressId">
+<generator class="increment"/>
+</id>
+<property name="addressLine1"></property>    
+          <property name="city"></property>    
+          <property name="state"></property>    
+          <property name="country"></property>    
+          <property name="pincode"></property>
+<many-to-one name="employee" cascade="all"/>
+</class>
+
+</hibernate-mapping>
